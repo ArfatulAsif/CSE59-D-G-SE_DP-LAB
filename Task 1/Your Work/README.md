@@ -1,9 +1,6 @@
 
 
 # Inventory Management System
-
-Version 1.0
-
 ---
 
 # Table of Contents
@@ -472,6 +469,8 @@ The following features may be implemented in future versions:
 | Version | Description   |
 | ------- | ------------- |
 | 1.0     | Initial Draft |
+
+  
 #ER DIAGRAM
 <img width="1536" height="1024" alt="erd" src="https://github.com/user-attachments/assets/0b80eb13-d331-4b8c-aac5-1e18a220074a" />
 
