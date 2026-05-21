@@ -1,5 +1,4 @@
-# Yo```markdown
-# StudyHub
+
 
 ## Software Requirements Specification (SRS)
 
@@ -255,7 +254,8 @@ StudyHub is a standalone web application that may integrate with:
 
 # 4. System Models
 
-## Context Diagram
+## ER diagram
+< img Task 1/Your Work/images/ChatGPT Image May 21, 2026, 04_45_56 PM.png
 
 ### External Entities
 
