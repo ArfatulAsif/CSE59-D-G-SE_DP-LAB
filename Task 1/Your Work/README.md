@@ -1,4 +1,5 @@
-# Your SRS
+
+
 # Software Requirements Specification (SRS)
 
 ## Metropolitan University Smart Canteen Management System
@@ -14,8 +15,6 @@ This document provides the Software Requirements Specification (SRS) for the **M
 # Version History
 
 * **Version 1.0** – Initial Draft
-* **Version 1.1** – Added non-functional requirements and system model
-* **Version 1.2** – Refined system evolution and database design
 
 ---
 
