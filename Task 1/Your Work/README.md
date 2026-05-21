@@ -11,13 +11,7 @@ This document provides the Software Requirements Specification (SRS) for the **E
 
 ---
 
-# Version History
 
-- **Version 1.0** – Initial Draft
-- **Version 1.1** – Added database and ER diagram section
-- **Version 1.2** – Refined functional and non-functional requirements
-
----
 
 # 1. Introduction
 
