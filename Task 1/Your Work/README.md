@@ -286,47 +286,7 @@ This module manages patient appointments with doctors.
 
 # 8. ER Diagram
 
-```text
-+----------------+
-|     USERS      |
-+----------------+
-| user_id (PK)   |
-| username       |
-| password       |
-| role           |
-+----------------+
 
-        |
-        |
-        v
-
-+----------------+        +----------------+
-|    PATIENTS    |        |    DOCTORS     |
-+----------------+        +----------------+
-| patient_id PK  |        | doctor_id PK   |
-| name           |        | name           |
-| age            |        | specialization |
-| gender         |        | department     |
-| address        |        | phone          |
-| phone          |        +----------------+
-+----------------+                 |
-        |                           |
-        |                           |
-        +-----------+---------------+
-                    |
-                    v
-
-           +-------------------+
-           |   APPOINTMENTS    |
-           +-------------------+
-           | appointment_id PK |
-           | patient_id FK     |
-           | doctor_id FK      |
-           | app_date          |
-           | app_time          |
-           | status            |
-           +-------------------+
-```
 
 ---
 
