@@ -149,7 +149,7 @@ MacOS
 The system should support cloud deployment
 4. System Models
 ER diagram
-<img src="images/ER Diagram.png"
+<img src="images/ER Diagram.png">
 
 The system interacts with:
 
