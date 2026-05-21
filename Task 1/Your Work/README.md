@@ -352,8 +352,7 @@ The system will operate in the following environment:
 
 # 4.1 Entity Relationship Diagram (ER Diagram)
 
-erDiagram
-
+<img src="images/ER2.png">
 
 ---
 
