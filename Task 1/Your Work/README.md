@@ -267,6 +267,10 @@ The EasyBuy system interacts with:
 
 # ENTITY RELATIONSHIP (ER) DIAGRAM
 
+![ER Diagram](images/er-diagram.png)
+
+---
+
 ## Entities
 
 ### USERS
@@ -289,7 +293,7 @@ The EasyBuy system interacts with:
 | id | Primary Key |
 | name | Product name |
 | price | Product price |
-| image_path | Product image |
+| image_path | Product image location |
 
 ---
 
