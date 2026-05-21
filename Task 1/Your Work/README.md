@@ -59,6 +59,7 @@ English Janala is a MERN stack web application designed to help users improve th
 
 
 # Entity relationship (re) diagram
+<img src="mermaid-diagram">
 
 
 # Project Structure
