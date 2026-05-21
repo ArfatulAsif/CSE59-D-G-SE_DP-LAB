@@ -173,29 +173,11 @@ The Pharmacy Management System is a standalone web application that may integrat
 
 # 4. System Models
 
-> * **CONTEXT DIAGRAM**
->
->   <img src="images/context-diagram.png">
-
-> * **ACTIVITY DIAGRAM**
->
->   <img src="images/activity-diagram.png" alt="Activity Diagram">
-
-> * **USE CASE DIAGRAM**
->
->   <img src="images/usecase-diagram.png" alt="Use Case Diagram">
-
-> * **SEQUENCE DIAGRAM**
->
->   <img src="images/sequence-diagram.png" alt="Sequence Diagram">
 
 > * **ENTITY-RELATIONSHIP DIAGRAM**
 >
 >   <img src="images/1964ccdf-1d8f-4bef-9246-9f52d7e4c302 (6).png" alt="ER Diagram">
 
-> * **STATE DIAGRAM**
->
->   <img src="images/state-diagram.png" alt="State Diagram">
 
 ---
 
