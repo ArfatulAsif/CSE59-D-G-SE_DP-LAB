@@ -259,6 +259,8 @@ The EasyBuy system interacts with:
 - View Orders
 
 ---
+#ER DIAGRAM
+<image src="images\ChatGPT Image May 21, 2026, 05_10_01 PM.png">
 
 # ENTITY RELATIONSHIP (ER) DIAGRAM
 
