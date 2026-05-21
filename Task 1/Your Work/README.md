@@ -176,7 +176,7 @@ SafeCity is a standalone web-based system integrated with GPS services, notifica
 
 ![Image](https://images.openai.com/static-rsc-4/NRDRqyHcDk_oBOwriXyMz1TfL2rc_BUbc2DO60k7mFrIO4ZsTW63UnLPWWkoIpdtDOv_Pzxv44ifLDai-kbibTGWO7Pwez1r6yr0IZqg9S1jSy8tFidT1RZ4F8MChdm5Gu_bBP3Wty1sw802lGWCkJ7UyINf21GNsxMbcRFQF1saPFEeM5IYy7uY0oeO36Ns?purpose=fullsize)
 
-<img src = "images/SafeCity_ER_Diagram_High_Resolution.png">
+<img src="images/SafeCity_ER_Diagram_High_Resolution.png">
 
 ---
 
