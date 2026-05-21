@@ -169,18 +169,7 @@ SafeCity is a standalone web-based system integrated with GPS services, notifica
 
 ## 4. System Models
 
-## Context Diagram
-
-## Activity Diagram
-
-## Use Case Diagram
-
-## Entity-Relationship (ER) Diagram
-
-## Sequence Diagram
-
-## State Diagram
-
+## ER DIAGRAM
 ![Image](https://images.openai.com/static-rsc-4/NRDRqyHcDk_oBOwriXyMz1TfL2rc_BUbc2DO60k7mFrIO4ZsTW63UnLPWWkoIpdtDOv_Pzxv44ifLDai-kbibTGWO7Pwez1r6yr0IZqg9S1jSy8tFidT1RZ4F8MChdm5Gu_bBP3Wty1sw802lGWCkJ7UyINf21GNsxMbcRFQF1saPFEeM5IYy7uY0oeO36Ns?purpose=fullsize)
 
 ![Image](https://images.openai.com/static-rsc-4/6pp_VktP7kYx4dHTq7A0Ip0qqnk1_QwH74PDXPfHXtQFzILUWO5aUxN3BZjDIs40_zqDXkz61ADXN6WvqhSqhHMTuwPkmeHcI8Z0OsQbU6M3FI7ggxGVGE8m0H2mihd6Ne2An39eGt5fVSX9kUaYyv4FlKKMLrG-j7H5Iu2KDXiJ7wMMJNsndx0xQyctJyyy?purpose=fullsize)
