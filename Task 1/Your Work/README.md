@@ -267,7 +267,8 @@ The EasyBuy system interacts with:
 
 # ENTITY RELATIONSHIP (ER) DIAGRAM
 
-![ER Diagram](images/er-diagram.png)
+<image src="images\Screenshot_20260521-161210.jpg">
+
 
 ---
 
