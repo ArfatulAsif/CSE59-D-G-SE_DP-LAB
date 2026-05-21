@@ -255,7 +255,7 @@ StudyHub is a standalone web application that may integrate with:
 # 4. System Models
 
 ## ER diagram
-< img Task 1/Your Work/images/ChatGPT Image May 21, 2026, 04_45_56 PM.png
+<img src="Task 1/Your Work/images/ChatGPT Image May 21, 2026, 04_45_56 PM.png"> 
 
 ### External Entities
 
