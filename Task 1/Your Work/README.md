@@ -10,14 +10,6 @@ This document provides the Software Requirements Specification (SRS) for the **C
 
 ---
 
-## Version History
-
-* **Version 1.0** – Initial Draft
-* **Version 1.1** – Added non-functional requirements
-* **Version 1.2** – Refined database model and glossary
-
----
-
 # 1. Introduction
 
 ## Purpose
