@@ -286,7 +286,7 @@ This module manages patient appointments with doctors.
 
 # 8. ER Diagram
 
-
+<img src="images/ER.png">
 
 ---
 
