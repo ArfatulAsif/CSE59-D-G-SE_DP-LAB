@@ -1,394 +1,229 @@
 # Software Requirements Specification (SRS)
 
-# SafeCity – Smart Crime Reporting & Emergency Response System
+## SafeCity – Smart Crime Reporting & Emergency Response System
 
 ---
 
-# Preface
+## Preface
 
-This document provides the Software Requirements Specification (SRS) for the **SafeCity – Smart Crime Reporting & Emergency Response System**. It defines the system’s functionalities, performance criteria, security requirements, emergency response capabilities, and overall system architecture necessary for development.
+This document provides the Software Requirements Specification (SRS) for the **SafeCity – Smart Crime Reporting & Emergency Response System**. It defines the system’s functionalities, performance criteria, security requirements, emergency handling mechanisms, and overall system architecture necessary for development.
 
----
-
-# Version History
-
-* **Version 1.0** – Initial Draft.
-* **Version 1.1** – Added non-functional requirements and emergency response modules.
-* **Version 1.2** – Refined system models and future AI integration.
+SafeCity is a web-based public safety platform designed to improve crime reporting, emergency communication, incident tracking, and real-time response coordination between citizens and authorities.
 
 ---
 
-# 1. Introduction
+## Version History
 
-## Purpose
+* **Version 1.0** – Initial Draft
 
-The **SafeCity** is a web-based smart public safety application designed to improve crime reporting, emergency communication, incident tracking, and public safety monitoring through real-time technologies and AI-powered assistance.
-
-The system enables citizens to report incidents quickly while allowing law enforcement agencies and emergency responders to efficiently manage and monitor public safety situations.
 
 ---
 
-## Document Conventions
+## 1. Introduction
 
-This document follows the IEEE SRS standard, using:
+### Purpose
 
-* **Must** – Indicates mandatory requirements.
-* **Should** – Indicates recommended features.
-* **May** – Indicates optional enhancements.
+SafeCity is designed to provide a centralized platform where citizens can report crimes or emergencies in real time. The system ensures quick response from authorities by enabling efficient incident tracking, verification, and dispatching of emergency services.
 
----
+### Document Conventions
 
-## Intended Audience and Reading Suggestions
+This document follows IEEE SRS guidelines using:
 
-* **Developers & System Architects** – For implementation guidance.
-* **Government & Law Enforcement Agencies** – To understand system functionality.
-* **Stakeholders & Analysts** – For project planning and requirement validation.
-* **Testers & QA Teams** – To verify compliance with requirements.
+* **Must** – Mandatory requirements
+* **Should** – Recommended features
+* **May** – Optional features
 
----
+### Intended Audience
 
-## Scope
+* System Developers
+* Project Managers
+* Law Enforcement Authorities
+* QA/Test Engineers
+* Stakeholders & Researchers
 
-The system provides:
+### Scope
 
-* Crime reporting and emergency alerts
-* Real-time incident monitoring
-* AI-powered threat detection and recommendations
-* Emergency response coordination
-* Citizen and authority communication
-* Location tracking and mapping services
-* Analytics and crime statistics dashboard
+SafeCity provides:
 
----
-
-## References
-
-* IEEE Standard 830-1998 (Software Requirements Specification)
-* Public Safety Management Guidelines
-* System Modeling Documentation
+* Real-time crime reporting
+* Emergency alert system (police, fire, ambulance)
+* Incident tracking and status updates
+* Location-based reporting
+* Admin dashboard for authorities
+* Evidence upload (images, videos, audio)
+* Notification system for emergency response
 
 ---
 
-# 2. Overall Description
+## 2. Overall Description
 
-## Product Perspective
+### Product Perspective
 
-The **SafeCity** system is a standalone cloud-based web application integrated with emergency communication systems, GPS services, and notification platforms.
+SafeCity is a standalone web-based system integrated with GPS services, notification services, and future mobile applications for real-time emergency handling.
 
-The platform may integrate with:
+### Product Functions
 
-* Google Maps API
-* SMS & Email Services
-* Police and Emergency Hotlines
-* CCTV Monitoring Systems
+* Crime and incident reporting
+* Emergency SOS alert system
+* Case assignment to authorities
+* Real-time tracking of incidents
+* Evidence management
+* Automated notifications
+* Analytics and reporting dashboard
 
----
+### User Classes
 
-## Product Functions
+* **Citizen:** Reports crimes and emergencies
+* **Police Officer:** Handles assigned cases
+* **Admin:** Manages system, users, and verification
+* **Emergency Responder:** Fire, ambulance, rescue teams
 
-### Crime Reporting
+### Operating Environment
 
-* Citizens can report crimes and emergencies.
-* Users can upload images, videos, and location details.
+* Web application (Chrome, Firefox, Edge)
+* Mobile-friendly responsive interface
+* Cloud-based backend
+* Database: MongoDB / PostgreSQL (scalable)
 
-### Emergency Response
+### Constraints
 
-* Emergency responders receive alerts instantly.
-* Authorities can track incidents in real time.
+* Requires internet and GPS for real-time reporting
+* Must comply with data protection and privacy regulations
+* High availability required for emergency handling
 
-### Incident Management
+### Assumptions
 
-* Authorities can manage, update, and resolve incidents.
-* Incident status tracking is available.
-
-### Real-Time Monitoring
-
-* Live dashboards for crime statistics and emergency cases.
-* Map-based incident visualization.
-
-### Notifications & Alerts
-
-* SMS, email, and app notifications for emergencies.
-* Public safety announcements.
-
-### AI Assistance
-
-* AI-based incident categorization.
-* Threat prediction and smart recommendations.
+* Users have access to smartphones or internet-enabled devices
+* Authorities actively respond to system alerts
 
 ---
 
-## User Classes and Characteristics
+## 3. System Requirements
 
-### Admin
+### Functional Requirements
 
-* Manages users and system settings.
-* Controls security and permissions.
+#### User Authentication
 
-### Police / Emergency Officer
+* System must allow registration, login, and password recovery
+* Role-based access control must be enforced
 
-* Reviews reports and responds to incidents.
-* Updates incident status and response logs.
+#### Crime Reporting
 
-### Citizen
+* Citizens must be able to report incidents with location and description
+* Users may upload evidence (images, videos)
 
-* Reports crimes and emergencies.
-* Tracks report status and receives notifications.
+#### Emergency Alert System
 
----
+* Users must be able to trigger SOS alerts instantly
+* System must notify nearest authorities automatically
 
-## Operating Environment
+#### Case Management
 
-* Web-based application accessible via:
+* Authorities must be able to view, assign, and update cases
+* Each case must have a unique tracking ID
 
-  * Chrome
-  * Firefox
-  * Edge
-* Cloud-hosted infrastructure
-* **Database:** MongoDB
+#### Notification System
 
----
+* System must send real-time alerts via email/SMS/push notifications
 
-## Design and Implementation Constraints
+#### Reporting & Analytics
 
-* Must comply with cybersecurity and privacy regulations.
-* Requires secure cloud infrastructure.
-* Real-time location tracking requires GPS services.
+* Admin must generate reports on crime frequency and response time
+* Data must be exportable (PDF, CSV)
 
 ---
 
-## Assumptions and Dependencies
+### Non-Functional Requirements
 
-* Internet access is required for real-time updates.
-* GPS services must be enabled for location tracking.
-* Future mobile application support may be added.
+#### Performance
 
----
+* System must support 1000+ concurrent users
+* Emergency alerts must be processed within seconds
 
-# 3. System Requirements Specification
+#### Security
 
-# Functional Requirements
+* All sensitive data must be encrypted
+* Role-based authentication must be enforced
+* Secure API communication (HTTPS)
 
-## User Authentication
+#### Usability
 
-* The system must allow users to register and log in securely.
-* The system must support password reset functionality.
-* The system must implement role-based authentication.
+* Simple and accessible UI for all user types
+* Mobile responsive design required
 
----
+#### Reliability
 
-## Crime Reporting
+* 99.9% system uptime required
+* Backup and disaster recovery system must exist
 
-* Citizens must be able to report crimes and emergencies.
-* Reports must include:
+#### Scalability
 
-  * Incident type
-  * Description
-  * Location
-  * Uploaded media files
-* The system must generate a unique report ID.
+* System must support expansion to national-level deployment
 
----
+#### Maintainability
 
-## Emergency Response Management
-
-* Emergency officers must receive instant alerts.
-* Officers must be able to update incident status.
-* The system must track response times.
+* Modular architecture for easy updates
+* Logging and monitoring system required
 
 ---
 
-## Incident Monitoring
+## 4. System Models
 
-* The system must display incidents on a live dashboard.
-* Authorities must be able to filter incidents by:
+## Context Diagram
 
-  * Type
-  * Location
-  * Severity
-  * Status
+## Activity Diagram
 
----
+## Use Case Diagram
 
-## Notifications & Alerts
+## Entity-Relationship (ER) Diagram
 
-* The system must send notifications for:
+## Sequence Diagram
 
-  * Incident updates
-  * Emergency alerts
-  * Public warnings
-* Notifications should support SMS and email delivery.
+## State Diagram
 
----
+![Image](https://images.openai.com/static-rsc-4/NRDRqyHcDk_oBOwriXyMz1TfL2rc_BUbc2DO60k7mFrIO4ZsTW63UnLPWWkoIpdtDOv_Pzxv44ifLDai-kbibTGWO7Pwez1r6yr0IZqg9S1jSy8tFidT1RZ4F8MChdm5Gu_bBP3Wty1sw802lGWCkJ7UyINf21GNsxMbcRFQF1saPFEeM5IYy7uY0oeO36Ns?purpose=fullsize)
 
-## AI-Based Features
+![Image](https://images.openai.com/static-rsc-4/6pp_VktP7kYx4dHTq7A0Ip0qqnk1_QwH74PDXPfHXtQFzILUWO5aUxN3BZjDIs40_zqDXkz61ADXN6WvqhSqhHMTuwPkmeHcI8Z0OsQbU6M3FI7ggxGVGE8m0H2mihd6Ne2An39eGt5fVSX9kUaYyv4FlKKMLrG-j7H5Iu2KDXiJ7wMMJNsndx0xQyctJyyy?purpose=fullsize)
 
-* The system should categorize incidents automatically.
-* The system may provide smart emergency recommendations.
-* The system may detect suspicious activity patterns.
+![Image](https://images.openai.com/static-rsc-4/NRDRqyHcDk_oBOwriXyMz1TfL2rc_BUbc2DO60k7mFrIO4ZsTW63UnLPWWkoIpdtDOv_Pzxv44ifLDai-kbibTGWO7Pwez1r6yr0IZqg9S1jSy8tFidT1RZ4F8MChdm5Gu_bBP3Wty1sw802lGWCkJ7UyINf21GNsxMbcRFQF1saPFEeM5IYy7uY0oeO36Ns?purpose=fullsize)
 
 ---
 
-## Reporting & Analytics
+## 5. System Evolution
 
-* Authorities must be able to generate crime reports.
-* Reports should be exportable in PDF and CSV formats.
-* The system should provide crime trend analysis.
+### Assumptions
 
----
+* AI-based crime prediction may be integrated in future
+* Mobile app version will be developed
+* Expansion to smart city infrastructure possible
 
-# Non-Functional Requirements
+### Expected Enhancements
 
-## Performance Requirements
-
-* The system must support 1000+ concurrent users.
-* Emergency alerts must be delivered in real time.
-* Incident dashboards should refresh instantly.
-
----
-
-## Security Requirements
-
-* All sensitive data must be encrypted.
-* The system must implement secure role-based access control.
-* The system should maintain audit logs for activities.
+* AI-powered incident classification
+* Live CCTV integration
+* Integration with national emergency services
+* Real-time location tracking of responders
 
 ---
 
-## Usability Requirements
+## 6. Appendices
 
-* The system should provide a user-friendly interface.
-* The platform must support accessibility standards.
-* Emergency reporting should require minimal steps.
+### Hardware Requirements
 
----
+* Cloud servers with load balancing
+* GPS-enabled mobile devices for users
+* High-availability database infrastructure
 
-## Reliability and Availability
+### Database Requirements
 
-* The system must ensure 99.9% uptime.
-* Backup and disaster recovery mechanisms must be implemented.
-* Data synchronization must be reliable.
+* Structured storage for users, incidents, reports, and responses
+* Strong relational mapping between:
 
----
-
-## Maintainability and Support
-
-* The system should support modular updates.
-* Proper logging and debugging tools must be available.
-* APIs should support future integrations.
+  * Users ↔ Incidents
+  * Officers ↔ Cases
+  * Incidents ↔ Locations
+  * Reports ↔ Evidence
 
 ---
 
-## Portability
 
-* The system should support Windows, Linux, and Mac.
-* The application must support cloud deployment.
-
----
-
-# 4. System Models
-
-## CONTEXT DIAGRAM
-
-*(Insert Context Diagram Here)*
-
----
-
-## ACTIVITY DIAGRAM
-
-*(Insert Activity Diagram Here)*
-
----
-
-## USE CASE DIAGRAM
-
-*(Insert Use Case Diagram Here)*
-
----
-
-## SEQUENCE DIAGRAM
-
-*(Insert Sequence Diagram Here)*
-
----
-
-## ENTITY-RELATIONSHIP DIAGRAM
-
-### Main Entities
-
-| Entity             | Attributes                                            |
-| ------------------ | ----------------------------------------------------- |
-| User               | UserID, Name, Email, Password, Role                   |
-| Incident Report    | ReportID, UserID, Type, Description, Location, Status |
-| Emergency Response | ResponseID, ReportID, OfficerID, ResponseStatus       |
-| Notification       | NotificationID, UserID, Message, DateTime             |
-| Media Files        | MediaID, ReportID, FilePath                           |
-| Admin              | AdminID, Permissions                                  |
-
-### Relationships
-
-* One User can create multiple Incident Reports.
-* One Incident Report can have multiple Emergency Responses.
-* One Incident Report can contain multiple Media Files.
-* One User can receive multiple Notifications.
-* Admin manages all users and reports.
-
----
-
-## STATE DIAGRAM
-
-*(Insert State Diagram Here)*
-
----
-
-# 5. System Evolution
-
-## Assumptions
-
-* AI integration will improve emergency response efficiency.
-* Future mobile applications may be developed.
-* The system will scale for smart city infrastructure.
-
----
-
-## Expected Changes
-
-* Integration with IoT and CCTV systems.
-* AI-powered crime prediction features.
-* Multi-language support.
-* Real-time chatbot assistance.
-
----
-
-# 6. Appendices
-
-## Hardware Requirements
-
-* Cloud-based scalable servers
-* GPS-enabled tracking systems
-* Secure backup servers
-
----
-
-## Database Requirements
-
-* MongoDB database with secure collections
-* Logical relationships between:
-
-  * Users
-  * Reports
-  * Emergency Responses
-  * Notifications
-  * Incident Logs
-
----
-
-# Glossary
-
-| Term               | Meaning                                     |
-| ------------------ | ------------------------------------------- |
-| Incident           | A reported crime or emergency case          |
-| Emergency Response | Actions taken by authorities after a report |
-| Dashboard          | Real-time monitoring interface              |
-| AI Detection       | Smart analysis for suspicious activities    |
-| GPS Tracking       | Location-based incident monitoring          |
