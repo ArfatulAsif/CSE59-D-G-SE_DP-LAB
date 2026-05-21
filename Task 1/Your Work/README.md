@@ -162,4 +162,4 @@ The system is a standalone web application connected to a centralized database.
 
 
 ## ER Diagram Structure
-< img src="images\ChatGPT Image May 21, 2026, 04_44_23 PM.png">
+<image src="images\ChatGPT Image May 21, 2026, 04_44_23 PM.png">
