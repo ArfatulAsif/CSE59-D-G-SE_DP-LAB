@@ -262,7 +262,7 @@ The EasyBuy system interacts with:
 
 # ENTITY RELATIONSHIP (ER) DIAGRAM
 
-<image src="C:\Users\Gcl\Downloads\ChatGPT Image May 21, 2026, 05_10_01 PM.png">
+<image src="images\ChatGPT Image May 21, 2026, 05_10_01 PM.png">
 
 ---
 
