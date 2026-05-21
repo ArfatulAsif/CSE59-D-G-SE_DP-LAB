@@ -166,24 +166,4 @@ The system is a standalone web application connected to a centralized database.
 ---
 
 ## ER Diagram Structure
-
-```text
-+----------------+       +----------------+       +----------------+
-|     MEMBER     |       |     ISSUE      |       |      BOOK      |
-+----------------+       +----------------+       +----------------+
-| Member_ID (PK) |<----->| Issue_ID (PK)  |<----->| Book_ID (PK)   |
-| Name           |       | Issue_Date     |       | Title           |
-| Email          |       | Return_Date    |       | Author          |
-| Phone          |       | Fine           |       | Category        |
-| Address        |       | Member_ID (FK) |       | Availability    |
-+----------------+       | Book_ID (FK)   |       +----------------+
-                         +----------------+
-
-                +-------------------+
-                |      ADMIN        |
-                +-------------------+
-                | Admin_ID (PK)     |
-                | Name              |
-                | Email             |
-                | Password          |
-                +-------------------+
+< img src="images\ChatGPT Image May 21, 2026, 04_44_23 PM.png">
