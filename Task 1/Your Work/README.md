@@ -1,4 +1,4 @@
-# Your SRS
+
 # Software Requirements Specification (SRS)
 
 ## Preface
