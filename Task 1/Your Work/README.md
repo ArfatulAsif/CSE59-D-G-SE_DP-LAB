@@ -13,8 +13,6 @@ This document provides the Software Requirements Specification (SRS) for the Sma
 # Version History
 
 - Version 1.0 – Initial Draft
-- Version 1.1 – Added non-functional requirements
-- Version 1.2 – Added ER Diagram and system evolution
 
 ---
 
