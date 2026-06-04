@@ -11,6 +11,7 @@ This document provides the Software Requirements Specification (SRS) for the **C
 ---
 
 # 1. Introduction
+![image alt](Task 1/Your Work/images/hjh.jpeg)
 
 ## Purpose
 
