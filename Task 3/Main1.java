@@ -1,61 +1,47 @@
+class User{
+    private String username;
+    private String email;
 
-interface Shape {
-    double calculateArea();
-}
-class Rectangle implements Shape {
-    private double  length;
-    private double width;
-    public Rectangle( double length ,double width){
-        this.length=length;
-        this.width= width;
+    public User(String username, String email){
+        this.username=username;
+        this.email=email;
     }
-    @Overrid
-    public double calculateArea(){
-        return length*width;
+
+    public String getUsername(){
+        return username;
     }
-}
-class circle implements shape{
-    private double radius;
-    public circle(double radius){
-        this.radius=radius;
-    }
-    @Override
-    public double calculateArea(){
-        return Math.PI * radius*radius;
-    }
-}
-class triangle implements Shape{
-    private double base;
-    private double height;
-    public triangle (double base , double height){
-            this.base=base;
-            this.height=height;
-    }
-    @Override
-    public double calculateArea(){
-        return 0.5*base*height;
+    public String getEmail(){
+        return email;
     }
 }
 
-class calculateArea{
-    public double calculateTotalArea(Shape[] shapes) {
-        double totalarea=0;
-        for (Shape sh:shapes){
-            totalarea+=sh.calculateArea();
+ class Emailvalidator{
+    public static boolean isValid(String email){
+        if( email!=null && email.contains("@")){
+            return true;
         }
-        return totalarea;
+        System.out.println("Invalid Format");
+        return false;
+    }
+}
+
+class UserRepository{
+    public void save( User user){
+        System.out.println("Connecting to database");
+        System.out.println("saving user "+ user.getUsername() + "to the users table");
     }
 }
 
 public class Main {
-    public static void main (String[] args) {
-        Shape[] shapes = {
-            new Rectangle(10,5),
-            new circle(3),
-            new triangle(6,4)
-        };
-        calculateArea cal =new calculateArea();
-        double totalarea =cal.calculateTotalArea(shapes);
-        System.out.println("TOTAL AREA "+ totalarea);
+    public static void main(String[] args) {
+        User user = new User(
+        "Enamul",
+        "enamul@gmail.com"
+
+        );
+        if(Emailvalidator.isvalid(user.getEmail())){
+            UserRepository repository= new UserRepository();
+        repository.save(user);
+        }
     }
 }
