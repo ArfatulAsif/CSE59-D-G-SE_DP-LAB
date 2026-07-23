@@ -1,4 +1,3 @@
-
 import java.util.Scanner;
 
 class Course{
@@ -7,6 +6,10 @@ class Course{
     int topCount=0;
 
     void addStudent(String name, double marks){
+        if(marks>highestMarks){
+            highestMarks=marks;
+            highestName=name;
+        }
         if(marks>=80){
             topCount++;
         }
@@ -16,7 +19,7 @@ class Course{
 
     }
     int countTopGrades(double threshhold){
-        return topCount++;
+        return topCount;
     }
 }
 public class Main1{
